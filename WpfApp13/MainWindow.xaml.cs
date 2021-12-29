@@ -89,5 +89,10 @@ namespace WpfApp13
         {
             this.Close();
         }
+
+        private void ClearBtClick(object sender, RoutedEventArgs e)
+        {
+            this.ZipRecords.Clear();
+        }
     }
 }

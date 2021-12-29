@@ -18,7 +18,7 @@
             </MenuItem>
             
             <MenuItem Header="Edit(_E)">
-                <MenuItem x:Name="clearMenu" Header="Clear(_C)"></MenuItem>
+                <MenuItem x:Name="clearMenu" Header="Clear(_C)" Click="ClearBtClick" />
             </MenuItem>
         </Menu>
         <ListView x:Name="listView" HorizontalAlignment="Left" Width="400" Height="200" Margin="5">

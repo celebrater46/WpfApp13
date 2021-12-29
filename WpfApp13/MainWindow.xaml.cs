@@ -79,7 +79,7 @@ namespace WpfApp13
 
             if (dlg.ShowDialog() == true)
             {
-                this.IsEnabled == false;
+                this.IsEnabled == false; // [CS0201] Only assignment, call, increment, decrement, await, and new object expressions can be used as a statement
                 ReadCsv(dlg.FileName);
                 this.IsEnabled == true;
             }

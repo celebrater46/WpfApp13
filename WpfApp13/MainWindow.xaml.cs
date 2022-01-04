@@ -11,6 +11,9 @@ namespace WpfApp13
     /// </summary>
     public partial class MainWindow
     {
+        // private bool IsEnabled = false;
+        // public bool IsEnabled { get; set; }
+
         // public System.Collections.ObjectModel.ObservableCollection<ZipRecord> ZipRecords { get; set; }
         public ObservableCollection<ZipRecord> ZipRecords { get; set; }
         
@@ -79,9 +82,14 @@ namespace WpfApp13
 
             if (dlg.ShowDialog() == true)
             {
-                this.IsEnabled == false; // [CS0201] Only assignment, call, increment, decrement, await, and new object expressions can be used as a statement
+                // this.IsEnabled == false; // [CS0201] Only assignment, call, increment, decrement, await, and new object expressions can be used as a statement
+                // ^ bool IsEnabled is in UIElement class
+                // NOT "==" BUT "="!! Idiot.
+                this.IsEnabled = false; // [CS0201] Only assignment, call, increment, decrement, await, and new object expressions can be used as a statement
                 ReadCsv(dlg.FileName);
-                this.IsEnabled == true;
+                // this.IsEnabled == true;
+                // NOT "==" BUT "="!! Idiot.
+                this.IsEnabled = true;
             }
         }
 
@@ -93,6 +101,11 @@ namespace WpfApp13
         private void ClearBtClick(object sender, RoutedEventArgs e)
         {
             this.ZipRecords.Clear();
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            //this.IsEnabled == false;
         }
     }
 }

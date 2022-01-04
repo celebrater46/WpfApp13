@@ -20,6 +20,8 @@
             <MenuItem Header="Edit(_E)">
                 <MenuItem x:Name="clearMenu" Header="Clear(_C)" Click="ClearBtClick" />
             </MenuItem>
+
+            <!-- <MenuItem x:Name="Test" Header="testMenu" Click="Test_Click" IsEnabled={Binding IsEnabled} /> -->
         </Menu>
         <ListView x:Name="listView" HorizontalAlignment="Left" Width="400" Height="200" Margin="5">
             <ListView.View>

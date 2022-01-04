@@ -78,7 +78,7 @@ namespace WpfApp13
             var dlg = new Microsoft.Win32.OpenFileDialog();
 
             // dlg.Filter = "CSV file(.csv)|*.csv|Text file(.txt)|*.txt|Other file(*.*)|*.*";
-            // ^ Put "*" before extends
+            // ^ Put "*" before extension
             dlg.Filter = "CSV file(*.csv)|*.csv|Text file(*.txt)|*.txt|Other file(*.*)|*.*";
             dlg.FilterIndex = 1;
 
